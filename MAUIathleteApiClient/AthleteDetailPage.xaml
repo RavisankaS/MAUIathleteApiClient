@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:m="clr-namespace:RSIRIWARDENAGE1_Test3.Models"
+             x:Class="RSIRIWARDENAGE1_Test3.AthleteDetailPage"
+             Title="Athlete Details">
+    <ContentPage.Content>
+        <StackLayout Padding="10" Spacing="10">
+            <Label Text="Full Name" />
+            <Entry Text="{Binding FullName}" IsReadOnly="True" />
+            
+            <Label Text="Age" />
+            <Entry Text="{Binding Age}" IsReadOnly="True" />
+
+            <Label Text="Sport Name" />
+            <Entry Text="{Binding Sport.Name}" IsReadOnly="True" />
+
+            <Label Text="Height" />
+            <Entry Text="{Binding Height}" IsReadOnly="True" />
+
+            <Label Text="Weight" />
+            <Entry Text="{Binding Weight}" IsReadOnly="True" />
+
+            <Label Text="BMI" />
+            <Entry x:Name="BMIValue" IsReadOnly="True" />
+
+            <Label Text="BMI Category" />
+            <Entry x:Name="BMICategoryValue" IsReadOnly="True" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
